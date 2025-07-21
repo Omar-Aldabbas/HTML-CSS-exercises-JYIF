@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Styled Form</title>
+    <style>
+      * {
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f2f5;
+      }
+      form {
+        max-width: 500px;
+        margin: 30px auto;
+        padding: 20px;
+      }
+      fieldset {
+        border: 2px solid #0d2a49;
+        background-color: #e7f0ff;
+        padding: 15px 20px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        width: 100%;
+      }
+      legend {
+        font-weight: bold;
+        font-size: 1.2em;
+        padding: 0 5px;
+        color: #004085;
+      }
+      label {
+        display: inline-block;
+        width: 110px;
+        margin-bottom: 8px;
+        vertical-align: top;
+        color: #003366;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="number"] {
+        width: calc(100% - 120px);
+        padding: 6px 8px;
+        margin-bottom: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        padding: 10px 25px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        font-size: 1em;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+      fieldset:nth-of-type(2) input{
+        display: inline-block;
+        width: 15%;
+        margin-bottom: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend>Personal Details</legend>
+        <label for="firstname">First name:</label>
+        <input type="text" name="firstname" id="firstname" required />
+        <br />
+        <label for="lastname">Last name:</label>
+        <input type="text" name="lastname" id="lastname" required />
+        <br />
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required />
+        <br />
+        <label>Gender:</label>
+        <input type="radio" name="gender" id="male" />
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" />
+        <label for="female">Female</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Magazines</legend>
+        <input type="checkbox" id="tech" name="magazine" value="tech" />
+        <label for="tech">Tech Monthly</label>
+        <input type="checkbox" id="fashion" name="magazine" value="fashion" />
+        <label for="fashion">Fashion Today</label>
+        <input type="checkbox" id="science" name="magazine" value="science" />
+        <label for="science">Science Digest</label>
+        <input type="checkbox" id="travel" name="magazine" value="travel" />
+        <label for="travel">Global Traveler</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Subscription</legend>
+        <label for="period">Period:</label>
+        <input
+          type="number"
+          id="period"
+          name="subscription_period"
+          min="1"
+          max="24"
+          placeholder="1 month"
+        />
+      </fieldset>
+
+      <button type="submit">Login</button>
+    </form>
+  </body>
+</html>
