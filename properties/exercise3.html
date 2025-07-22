@@ -1,56 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Exercise 3</title>
-  <style>
-    h1 {
-      font-family: 'Poppins', sans-serif;
-      font-size: 36px;
-      color: blue;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exercise 3</title>
+    <style>
+      h1 {
+        font-family: "Poppins", sans-serif;
+        font-size: 36px;
+        color: blue;
+      }
 
-    pre {
-      font-family: Consolas, Menlo, Monaco, 'Courier New', monospace;
-      font-weight: bold;
-      outline: 2px dashed #ccc;
-      outline-offset: 5px;
-    }
+      pre {
+        font-family: Consolas, Menlo, Monaco, "Courier New", monospace;
+        font-weight: bold;
+        border: 1px dashed #ccc;
+        padding: 10px;
+        margin-top: 5px;
+      }
 
-    span.value {
-      color: #009933;
-    }
+      span.value {
+        color: #009933;
+      }
 
-    a {
-      color: #0033cc;
-      text-decoration: none;
-      outline: 1px solid transparent;
-    }
+      a {
+        color: #0033cc;
+        text-decoration: none;
+      }
 
-    a:hover {
-      text-decoration: underline;
-      outline: 1px solid #0033cc;
-    }
-  </style>
-</head>
-<body>
+      p {
+        font-weight: bold;
+        font-family: Verdana;
+        border: 1px solid #000;
+        padding: 5px;
+      }
 
-  <h1>Styling CSS Properties</h1>
+      .code-title {
+        font-family: sans-serif;
+        font-size: 18px;
+        margin-top: 30px;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Styling CSS Properties</h1>
 
-  <pre>
+    <div class="code-title">.container style:</div>
+    <pre>
 .container {
   margin: <span class="value">20px</span>;
   padding: <span class="value">15px</span>;
   border: <span class="value">1px solid #000</span>;
 }
-  </pre>
+    </pre>
 
-  <p>
-    Learn more:
-    <a href="#">margin</a>, 
-    <a href="#">padding</a>, and 
-    <a href="#">border</a>.
-  </p>
+    <div class="code-title">p style:</div>
+    <pre>
+p {
+  font-weight: <span class="value">bold</span>;
+  font-family: <span class="value">Verdana</span>;
+  border: <span class="value">1px solid #000</span>;
+}
+    </pre>
 
-</body>
+    <p>
+      Learn more:
+      <a href="#">margin</a>, <a href="#">padding</a>, and
+      <a href="#">border</a>.
+    </p>
+  </body>
 </html>

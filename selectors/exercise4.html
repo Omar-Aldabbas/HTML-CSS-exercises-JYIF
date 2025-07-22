@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>exercise 4</title>
+    <style>
+      li:first-child {
+        font-weight: bold;
+      }
+
+      ul a {
+        color: red;
+      }
+
+      p a {
+        color: green;
+      }
+
+      p:nth-of-type(2) a {
+        color: purple;
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <p>There is some text <a href="">With a link</a> in it</p>
+    <p>Second paragraph with a <a href="">link</a>.</p>
+    <p>Third paragraph (<a href="">link</a> too, yes).</p>
+    <ul>
+      <li>First <a href="">link</a></li>
+      <li>
+        Second
+        <ul style="color: blue">
+          <li>111</li>
+          <li>222 <a href="">link</a></li>
+          <li>
+            333
+            <ul style="color: blue; list-style: none">
+              <li>red</li>
+              <li>green</li>
+              <li>blue <a href="">link</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>Third</li>
+      <li>Fourth</li>
+    </ul>
+  </body>
+</html>
